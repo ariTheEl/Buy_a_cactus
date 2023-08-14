@@ -1,0 +1,44 @@
+body{
+    font-size: 10px;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.26));
+    height: 100vh;
+    margin:0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:space-between;
+    padding: 1rem;
+}
+.date-div{
+    font-size: 3rem;
+    font-family: monospace;
+}
+
+.header-icons>img{
+    width: 3rem;
+    padding: 0 0.5rem;
+}
+.content{
+    height: 85vh;
+    margin-left: 2rem;
+    display: grid;
+    grid-template:2fr 1fr 4fr/1fr;
+    align-items: center;
+}
+p{
+    text-align: center;
+    font-size: 2rem;
+}
+h1{
+    font-size: 5rem;
+    justify-self: center;
+    align-self: center;
+}
+form{
+
+     justify-self: center;
+     align-self: center;
+}
+/* Implement page styling; alignment and sizing of form elements */

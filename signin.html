@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles2.css">
+    <title>Sign-In Page</title>
+</head>
+<body>
+    <nav>
+        <div class="header-icons">
+            <img src="./assets/images/arrow_back_FILL0_wght400_GRAD0_opsz48.png" alt="">
+            <img src="./assets/images/arrow_forward_FILL0_wght400_GRAD0_opsz48.png" alt="">
+            <img src="./assets/images/apps_FILL0_wght400_GRAD0_opsz48.png" alt="">
+        </div>
+    </nav>
+    <script>
+        var today = new Date();
+        var time = `${today.getHours()<10 ? '0' : '' }${today.getHours()}:${today.getMinutes()<10 ? '0' : ''
+            }${today.getMinutes()}`
+        const nav = document.querySelector('nav')
+        const div = document.createElement('div');
+        nav.append(div);
+        div.innerHTML = `${time}`
+        div.classList.add('date-div')
+    </script>
+    <div class="content">
+        <h1>Welcome Back,</h1>
+        <p>Please log into your account</p>
+        <form action="" method="post">
+            <input type="text" name="username" id="username" placeholder="user@gmail.com">
+            <div class="password">
+                <input type="password" name="password" id="password">
+                <p>
+                    <a href="">Forgot password?</a>
+                </p>
+            </div>
+            <input type="button" value="Login" >
+            <p><a href="">Create Account</a></p>
+        </form>
+    </div>
+</body>
+</html>
