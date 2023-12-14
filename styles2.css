@@ -1,9 +1,15 @@
 body{
-    font-size: 10px;
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.26));
     height: 100vh;
     margin:0;
     padding: 0;
+}
+*{
+    text-decoration: none;
+}
+.date-div{
+    font-size: 3rem;
+    font-family: monospace;
 }
 nav{
     display: flex;
@@ -11,34 +17,29 @@ nav{
     justify-content:space-between;
     padding: 1rem;
 }
-.date-div{
-    font-size: 3rem;
-    font-family: monospace;
-}
-
-.header-icons>img{
-    width: 3rem;
-    padding: 0 0.5rem;
-}
 .content{
-    height: 85vh;
-    margin-left: 2rem;
     display: grid;
-    grid-template:2fr 1fr 4fr/1fr;
-    align-items: center;
-}
-p{
-    text-align: center;
-    font-size: 2rem;
+    grid-template: 1fr /1fr;
+    justify-items: center;
+    align-content: center;
 }
 h1{
+    margin-top: -1rem;
+    color: #2f4f4f;
     font-size: 5rem;
-    justify-self: center;
-    align-self: center;
+    font-weight: 900;
+    font-family:dancing2;
+    margin: 1rem;
+    filter: drop-shadow(3px 4px 2px rgba(24, 29, 27, 0.651));
 }
-form{
 
-     justify-self: center;
-     align-self: center;
-}
 /* Implement page styling; alignment and sizing of form elements */
+
+@font-face {
+    font-family: dancing1;
+    src: url(./fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: dancing2;
+    src: url(./fonts/Dancing_Script/static/DancingScript-Regular.ttf);
+}
